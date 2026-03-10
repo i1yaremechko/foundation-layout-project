@@ -1,5 +1,6 @@
 # Foundation Layout Project
-[Site link](https://i1yaremechko.github.io/foundation-layout-project/)
+## [Site link](https://i1yaremechko.github.io/foundation-layout-project/)
+
 Layout supports mobile (up-to-1399) and desktop (from-1400) versions
 
 ## The tech stack is:
