@@ -1,0 +1,125 @@
+@import 'breakpoints';
+.footer {
+    margin-top: 40px;
+    @include for-desktop {
+        height: 389px;
+        margin: 0;
+    }
+    &__top {
+        @include for-desktop {
+            display: flex;
+            gap: 126px;
+            border-bottom: 1px solid rgba(227, 227, 227, 1);
+            padding-left: 130px;
+        }
+    }
+    &__logo {
+        padding-bottom: 40px;
+        text-align: center;
+        line-height: 25px;
+        border-bottom: 1px solid rgba(227, 227, 227, 1);
+        @include for-desktop {
+            padding-top: 43px;
+            text-align: left;
+            width: 360px;
+            line-height: 25px;
+            border: none;
+        }
+        &-icon {
+            margin-bottom: 20px;
+            @include for-desktop {
+                margin: 0;
+            }
+        }
+        &-content {
+            @include for-desktop {
+                height: 60px;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+        }
+        &-info {
+            margin-bottom: 32px;
+            @include for-desktop {
+                margin: 0;
+            }
+        }
+        &-title {
+            font-size: 20px;
+        }
+        &-subtitle {
+            font-size: 18px;
+        }
+        &-description {
+            @include for-desktop {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        &-downloads {
+            display: flex;
+            gap: 9px;
+            justify-content: center;
+            @include for-desktop {
+                justify-content: left;
+                gap: 10px;
+                margin-top: 31px;
+            }
+        }
+    }
+    &__navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 15px 22px;
+        @include for-desktop {
+            flex-direction: row;
+            gap: 29px;
+            padding-top: 60px;
+        }
+        &-list {
+            list-style-type: none;
+            &_item {
+                font-size: 18px;
+                line-height: 36px;
+            }
+        }
+        &-links {
+            margin-bottom: 6px;
+            @include for-desktop {
+                margin-bottom: 47px;
+                width: 265px;
+            }
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 18px;
+        }
+    }
+    &__bottom {
+        padding: 0 0 23px 15px;
+        @include for-desktop {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 130px;
+        }
+    }
+    &__links {
+        display: flex;
+        width: 180px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &-items {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    &__social-links {
+        display: flex;
+        gap: 20px;
+    }
+}

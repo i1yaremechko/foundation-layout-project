@@ -1,6 +1,16 @@
 @import 'variables.scss';
 @import 'breakpoints';
 @import 'header.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'features.scss';
+@import 'inbox.scss';
+@import 'communication.scss';
+@import 'audience.scss';
+@import 'feedback.scss';
+@import 'hiring.scss';
+@import 'order.scss';
+@import 'footer.scss';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,29 +45,25 @@ html {
     }
 }
 
+.subtitle {
+    font-size: 22px;
+    line-height: 34px;
+}
+
 .title {
     font-size: $font-size-title-mobile;
     line-height: 40px;
     letter-spacing: -0.36px;
-    margin-bottom: 18px;
     @include for-desktop {
-        font-size: 56px;
+        font-size: $font-size-title-desktop;
         line-height: 56px;
         letter-spacing: -0.5px;
     }
 }
 
-.subtitle {
-    font-size: 22px;
-    line-height: 34px;
-    color: $text-color-additional;
-    margin-bottom: 17px;
-}
-
 .description {
     font-size: 24px;
     line-height: 34px;
-    margin-bottom: 28px;
 }
 
 .additional-description {
@@ -66,16 +72,11 @@ html {
 
 .button {
     height: 48px;
-    width: 100%;
     border-radius: 2px;
     cursor: pointer;
     font-weight: 700;
     line-height: 14px;
-    border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-    @include for-desktop {
-        width: 160px;
-    }
     &__primary {
         background-color: $additional-color-blue;
         color: $additional-color-white;
@@ -91,7 +92,6 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
     }
     &__properties {
         max-width: 100%;

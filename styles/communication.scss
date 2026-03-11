@@ -1,0 +1,94 @@
+@import 'breakpoints';
+.communication {
+    padding: 50px 15px;
+    @include for-desktop {
+        height: 646px;
+        padding: 0;
+        margin: 110px 130px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__top {
+        @include for-desktop {
+            display: flex;
+            position: relative;
+            height: 489px;
+            gap: 192px;
+        }
+    }
+    &__content {
+        @include for-desktop {
+            padding: 13px 0 87px 0;
+        }
+    }
+    &__subtitle {
+        color: rgba(1, 137, 209, 1);
+        margin-bottom: 17px;
+        @include for-desktop {
+            margin-bottom: 24px;
+        }
+    }
+    &__title {
+        margin-bottom: 18px;
+        @include for-desktop {
+            margin-bottom: 30px;
+        }
+    }
+    &__description {
+        margin-bottom: 27px;
+        @include for-desktop {
+            margin-bottom: 39px;
+        }
+    }
+    &__button {
+        width: 160px;
+        border: none;
+    }
+    &__image {
+        margin: 40px 0;
+        @include for-desktop {
+            min-width: 426px;
+            margin: 0;
+            padding: 0;
+            margin-right: 62px;
+            gap: 17px;
+        }
+    }
+    &__line {
+        width: 150px;
+        border-color: rgba(0, 0, 0, 0.15);
+        @include for-desktop {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    &__bottom {
+        margin-top: 33px;
+        font-size: 18px;
+        line-height: 26px;
+        @include for-desktop {
+            margin-top: 41px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        @include for-desktop {
+            height: 115px;
+            width: 358px;
+        }
+        &:nth-child(2) {
+            margin: 33px 0 32px 0;
+            @include for-desktop {
+                margin: 0;
+            }
+        }
+        &-description {
+            margin-bottom: 6px;
+        }
+        &-link {
+            font-weight: 700;
+            color: rgba(48, 64, 196, 1);
+        }
+    }
+}
