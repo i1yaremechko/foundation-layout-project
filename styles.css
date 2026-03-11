@@ -134,7 +134,7 @@
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
-  letter-spacing: -0.31px;
+  letter-spacing: -0.3px;
 }
 @media screen and (min-width: 1400px) {
   .headline__content-title {
@@ -148,7 +148,7 @@
   }
 }
 .headline__content-description {
-  margin-top: 24px;
+  margin-top: 28px;
   font-size: 24px;
   line-height: 34px;
 }
@@ -1004,6 +1004,7 @@
   }
 }
 .footer__logo-icon {
+  width: 60px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1400px) {
@@ -1041,6 +1042,7 @@
   }
 }
 .footer__logo-downloads {
+  height: 40px;
   display: flex;
   gap: 9px;
   justify-content: center;
@@ -1070,7 +1072,7 @@
 }
 .footer__navigation-list_item {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 36px;
 }
 @media screen and (min-width: 1400px) {
   .footer__navigation-links {
