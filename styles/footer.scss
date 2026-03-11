@@ -83,11 +83,10 @@
             list-style-type: none;
             &_item {
                 font-size: 18px;
-                line-height: 36px;
+                line-height: 30px;
             }
         }
         &-links {
-            margin-bottom: 6px;
             @include for-desktop {
                 margin-bottom: 47px;
                 width: 265px;
