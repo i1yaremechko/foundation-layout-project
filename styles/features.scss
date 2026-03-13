@@ -1,116 +1,145 @@
 @import 'breakpoints';
+
 .features {
+  width: 100%;
+
+  @include for-desktop {
+    height: 600px;
     width: 100%;
+    position: relative;
+    padding-left: 130px;
+  }
+
+  &__subtitle {
+    margin-bottom: 17px;
+    color: rgba(0, 155, 77, 1);
+
     @include for-desktop {
-        height: 600px;
-        width: 100%;
-        position: relative;
-        padding-left: 130px;
+      margin-bottom: 23px;
     }
-    &__subtitle {
-        margin-bottom: 17px;
-        color: rgba(0, 155, 77, 1);
-        @include for-desktop {
-            margin-bottom: 23px;
-        }
+  }
+
+  &__description {
+    margin-bottom: 28px;
+
+    @include for-desktop {
+      margin-bottom: 42px;
     }
-    &__description {
-        margin-bottom: 28px;
-        @include for-desktop {
-            margin-bottom: 42px;
-        }
+  }
+
+  &__content {
+    @include for-desktop {
+      width: 457px;
     }
-    &__content {
-        @include for-desktop {
-            width: 457px;
-        }
+  }
+
+  &__customers {
+    padding: 48px 15px 40px;
+    border-bottom: 1px solid rgba(227, 227, 227, 1);
+
+    @include for-desktop {
+      padding: 0;
     }
-    &__customers {
-        padding: 48px 15px 40px;
-        border-bottom: 1px solid rgba(227, 227, 227, 1);
-        @include for-desktop {
-            padding: 0;
-        }
-        &-title {
-            margin-bottom: 15px;
-            @include for-desktop {
-                margin-bottom: 31px;
-            }
-        }
-        &-image {
-            gap: 19px;
-        }
+
+    &-title {
+      margin-bottom: 15px;
+
+      @include for-desktop {
+        margin-bottom: 31px;
+      }
     }
-    &__hidden-image {
-        @include for-desktop {
-            position: absolute;
-            top: 257px;
-            left: 0;
-        }
+
+    &-image {
+      gap: 19px;
     }
-    &__engage {
-        padding: 40px 15px;
-        border-bottom: 1px solid rgba(227, 227, 227, 1);
-        @include for-desktop {
-            padding: 0;
-        }
-        &-title {
-            margin-bottom: 18px;
-        }
-        &-image {
-            gap: 20px;
-        }
+  }
+
+  &__hidden-image {
+    @include for-desktop {
+      position: absolute;
+      top: 257px;
+      left: 0;
     }
-    &__support {
-        padding: 40px 15px 50px;
-        @include for-desktop {
-            padding: 0;
-            border-bottom: 1px solid rgba(227, 227, 227, 1);
-        }
-        &-title {
-            margin-bottom: 13px;
-        }
-        &-image {
-            gap: 20px;
-        }
+  }
+
+  &__engage {
+    padding: 40px 15px;
+    border-bottom: 1px solid rgba(227, 227, 227, 1);
+
+    @include for-desktop {
+      padding: 0;
     }
-    &__selector {
-        @include for-desktop {
-            padding-bottom: 20px;
-            margin-top: 20px;
-            &:hover {
-                cursor: pointer;
-                border-bottom: 3px solid rgba(49, 66, 198, 1);
-                & .features__selector-item {
-                    color: rgba(49, 66, 198, 1);
-                }
-                & .features__selector-icon {
-                    filter: brightness(1);
-                }
-            }
-            &-icon {
-                filter: brightness(0);
-            }
-            &-item {
-                display: flex;
-                gap: 15px;
-                align-items: center;
-                font-size: 22px;
-                line-height: 26px;
-            }
-            &-description {
-                margin-top: 8px;
-                font-size: 18px;
-                line-height: 26px;
-            }
-        }
+
+    &-title {
+      margin-bottom: 18px;
     }
-    &__invision-screen {
-        @include for-desktop {
-            height: 600px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
+
+    &-image {
+      gap: 20px;
     }
+  }
+
+  &__support {
+    padding: 40px 15px 50px;
+
+    @include for-desktop {
+      padding: 0;
+      border-bottom: 1px solid rgba(227, 227, 227, 1);
+    }
+
+    &-title {
+      margin-bottom: 13px;
+    }
+
+    &-image {
+      gap: 20px;
+    }
+  }
+
+  &__selector {
+    @include for-desktop {
+      padding-bottom: 20px;
+      margin-top: 20px;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid rgba(49, 66, 198, 1);
+
+        & .features__selector-item {
+          color: rgba(49, 66, 198, 1);
+        }
+
+        & .features__selector-icon {
+          filter: brightness(1);
+        }
+      }
+
+      &-icon {
+        filter: brightness(0);
+      }
+
+      &-item {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      &-description {
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &__invision-screen {
+    @include for-desktop {
+      height: 600px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }

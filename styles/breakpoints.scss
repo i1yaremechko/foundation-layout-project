@@ -1,6 +1,7 @@
 $desktop: 1400px;
+
 @mixin for-desktop {
-    @media screen and (min-width: $desktop) {
-        @content;
-    }
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
 }

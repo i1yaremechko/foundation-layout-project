@@ -1,39 +1,46 @@
 @import 'breakpoints';
+
 .customers {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 318px;
+
+  @include for-desktop {
+    flex-wrap: nowrap;
+    padding: 30px 130px 106px 130px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    flex: 33%;
+    min-height: 94px;
+    min-width: 106px;
+    padding: 14px;
     display: flex;
-    flex-wrap: wrap;
-    min-width: 318px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(227, 227, 227, 1);
+    border-right: 1px solid rgba(227, 227, 227, 1);
+
     @include for-desktop {
-        flex-wrap: nowrap;
-        padding: 30px 130px 106px 130px;
-        justify-content: space-between;
-        align-items: center;
+      flex: 0 0 auto;
+      padding: 0;
+      border: none;
     }
-    &__item {
-        flex: 33%;
-        min-height: 94px;
-        min-width: 106px;
-        padding: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-bottom: 1px solid rgba(227, 227, 227, 1);
-        border-right: 1px solid rgba(227, 227, 227, 1);
-        @include for-desktop {
-            flex: 0 0 auto;
-            padding: 0;
-            border: none;
-        }
-        &:last-child {
-            border-right: none;
-        }
-        &:nth-child(3) {
-            border-right: none;
-        }
-        &-logo {
-            filter: brightness(0);
-            max-width: 100%;
-            height: auto;
-        }
+
+    &:last-child {
+      border-right: none;
     }
+
+    &:nth-child(3) {
+      border-right: none;
+    }
+
+    &-logo {
+      filter: brightness(0);
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }

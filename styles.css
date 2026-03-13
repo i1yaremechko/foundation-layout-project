@@ -72,27 +72,27 @@
     display: flex;
     margin-left: auto;
   }
-  .header__navigation-menu {
+  .header__navigation-content {
     width: 292px;
     margin-right: 56px;
     padding-top: 7px;
   }
-  .header__navigation-menu_list {
+  .header__navigation-list {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
   }
-  .header__navigation-menu_item {
+  .header__navigation-item {
     cursor: pointer;
   }
-  .header__navigation-menu_item--selected {
+  .header__navigation-item--selected {
     font-weight: 700;
   }
-  .header__navigation-menu_item--dropdown {
+  .header__navigation-item--dropdown {
     display: inline-flex;
     align-items: center;
   }
-  .header__navigation-menu_arrow {
+  .header__navigation-arrow {
     display: inline-block;
     margin-left: 11px;
   }
@@ -130,14 +130,14 @@
     padding: 0;
   }
 }
-.headline__content-title {
+.headline__title {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: -0.3px;
 }
 @media screen and (min-width: 1400px) {
-  .headline__content-title {
+  .headline__title {
     width: 754px;
     font-size: 80px;
     font-weight: 700;
@@ -147,39 +147,39 @@
     z-index: 1;
   }
 }
-.headline__content-description {
+.headline__description {
   margin-top: 28px;
   font-size: 24px;
   line-height: 34px;
 }
 @media screen and (min-width: 1400px) {
-  .headline__content-description {
+  .headline__description {
     width: 456px;
     margin-top: 34px;
   }
 }
-.headline__content-action {
+.headline__action {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 @media screen and (min-width: 1400px) {
-  .headline__content-action {
+  .headline__action {
     margin-top: 58px;
     flex-direction: row;
     gap: 10px;
   }
 }
 @media screen and (min-width: 1400px) {
-  .headline__content-image {
+  .headline__image {
     position: absolute;
     height: 448px;
     bottom: 0;
     right: 0;
   }
 }
-.headline__content-image img {
+.headline__image-properties {
   width: 100%;
   height: auto;
   margin-bottom: 36px;
