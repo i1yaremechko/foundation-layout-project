@@ -231,8 +231,8 @@
 }
 .customers__item {
   flex: 33%;
-  min-height: 94px;
-  min-width: 106px;
+  height: 75px;
+  width: auto;
   padding: 14px;
   display: flex;
   align-items: center;
@@ -350,9 +350,18 @@
   gap: 20px;
 }
 @media screen and (min-width: 1400px) {
-  .features__selector {
+  .features__selector-customers {
     padding-bottom: 20px;
+    height: 107px;
+  }
+  .features__selector-engage {
+    height: 51px;
+    margin-top: 19px;
+  }
+  .features__selector-support {
+    height: 50px;
     margin-top: 20px;
+    padding: 2px;
   }
   .features__selector:hover {
     cursor: pointer;
@@ -371,11 +380,13 @@
     display: flex;
     gap: 15px;
     align-items: center;
+  }
+  .features__selector-title {
     font-size: 22px;
     line-height: 26px;
   }
   .features__selector-description {
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 18px;
     line-height: 26px;
   }

@@ -98,8 +98,21 @@
 
   &__selector {
     @include for-desktop {
-      padding-bottom: 20px;
-      margin-top: 20px;
+      &-customers {
+        padding-bottom: 20px;
+        height: 107px;
+      }
+
+      &-engage {
+        height: 51px;
+        margin-top: 19px;
+      }
+
+      &-support {
+        height: 50px;
+        margin-top: 20px;
+        padding: 2px;
+      }
 
       &:hover {
         cursor: pointer;
@@ -122,12 +135,15 @@
         display: flex;
         gap: 15px;
         align-items: center;
+      }
+
+      &-title {
         font-size: 22px;
         line-height: 26px;
       }
 
       &-description {
-        margin-top: 8px;
+        margin-top: 10px;
         font-size: 18px;
         line-height: 26px;
       }
