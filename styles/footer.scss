@@ -33,12 +33,14 @@
 
     &-icon {
       width: 60px;
+      object-fit: cover;
+      object-position: left;
+      transform: translate(2px, 5px) scale(1.1);
       margin-bottom: 20px;
 
       @include for-desktop {
         height: 60px;
-        object-fit: cover;
-        object-position: left;
+        transform: none;
         margin: 0;
       }
     }

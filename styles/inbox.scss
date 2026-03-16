@@ -79,8 +79,12 @@
     &-message {
       font-size: 20px;
       line-height: 28px;
-      height: 85px;
-      width: 459px;
+
+      @include for-desktop {
+        height: 85px;
+        width: 459px;
+      }
+
     }
 
     &-account {

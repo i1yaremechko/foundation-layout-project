@@ -58,13 +58,13 @@
 
   &__image {
     margin: 40px 0;
+    gap: 17px;
 
     @include for-desktop {
       min-width: 426px;
       margin: 0;
       padding: 0;
       margin-right: 62px;
-      gap: 17px;
     }
   }
 

@@ -12,7 +12,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     color: rgba(0, 155, 77, 1);
 
     @include for-desktop {
@@ -24,6 +24,7 @@
     margin-bottom: 28px;
 
     @include for-desktop {
+      height: 100px;
       margin-bottom: 42px;
     }
   }
@@ -43,9 +44,10 @@
     }
 
     &-title {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
 
       @include for-desktop {
+        height: 112px;
         margin-bottom: 31px;
       }
     }
@@ -74,7 +76,7 @@
     }
 
     &-title {
-      margin-bottom: 18px;
+      margin-bottom: 24px;
     }
 
     &-image {
@@ -91,7 +93,7 @@
     }
 
     &-title {
-      margin-bottom: 13px;
+      margin-bottom: 18px;
     }
 
     &-image {
@@ -103,12 +105,12 @@
     @include for-desktop {
       &-customers {
         padding-bottom: 20px;
-        height: 107px;
+        height: 106px;
       }
 
       &-engage {
-        height: 51px;
-        margin-top: 19px;
+        height: 50px;
+        margin-top: 20px;
       }
 
       &-support {

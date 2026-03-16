@@ -11,6 +11,7 @@
     text-align: center;
 
     &-title {
+      height: 45px;
       margin-bottom: 18px;
 
       @include for-desktop {
@@ -20,7 +21,7 @@
     }
 
     &-description {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
 
       @include for-desktop {
         width: 556px;
@@ -87,6 +88,7 @@
         font-size: 22px;
         line-height: 28px;
         margin-bottom: 19px;
+        width: 150px;
 
         @include for-desktop {
           width: 408px;

@@ -14,7 +14,7 @@
 
   &__item {
     flex: 33%;
-    height: 75px;
+    height: 94px;
     width: auto;
     padding: 14px;
     display: flex;
@@ -27,6 +27,7 @@
       flex: 0 0 auto;
       padding: 0;
       border: none;
+      height: auto;
     }
 
     &:last-child {

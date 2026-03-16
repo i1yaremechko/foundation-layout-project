@@ -193,7 +193,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 28px;
 }
 @media screen and (min-width: 1400px) {
   .about {
@@ -232,7 +232,7 @@
 }
 .customers__item {
   flex: 33%;
-  height: 75px;
+  height: 94px;
   width: auto;
   padding: 14px;
   display: flex;
@@ -246,6 +246,7 @@
     flex: 0 0 auto;
     padding: 0;
     border: none;
+    height: auto;
   }
 }
 .customers__item:last-child {
@@ -273,7 +274,7 @@
   }
 }
 .features__subtitle {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   color: rgb(0, 155, 77);
 }
 @media screen and (min-width: 1400px) {
@@ -286,6 +287,7 @@
 }
 @media screen and (min-width: 1400px) {
   .features__description {
+    height: 100px;
     margin-bottom: 42px;
   }
 }
@@ -304,10 +306,11 @@
   }
 }
 .features__customers-title {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1400px) {
   .features__customers-title {
+    height: 112px;
     margin-bottom: 31px;
   }
 }
@@ -333,7 +336,7 @@
   }
 }
 .features__engage-title {
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 .features__engage-image {
   gap: 20px;
@@ -348,7 +351,7 @@
   }
 }
 .features__support-title {
-  margin-bottom: 13px;
+  margin-bottom: 18px;
 }
 .features__support-image {
   gap: 20px;
@@ -356,11 +359,11 @@
 @media screen and (min-width: 1400px) {
   .features__selector-customers {
     padding-bottom: 20px;
-    height: 107px;
+    height: 106px;
   }
   .features__selector-engage {
-    height: 51px;
-    margin-top: 19px;
+    height: 50px;
+    margin-top: 20px;
   }
   .features__selector-support {
     height: 50px;
@@ -485,8 +488,12 @@
 .inbox__response-message {
   font-size: 20px;
   line-height: 28px;
-  height: 85px;
-  width: 459px;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__response-message {
+    height: 85px;
+    width: 459px;
+  }
 }
 .inbox__response-account {
   margin-top: 26px;
@@ -556,6 +563,7 @@
 }
 .communication__image {
   margin: 40px 0;
+  gap: 17px;
 }
 @media screen and (min-width: 1400px) {
   .communication__image {
@@ -563,7 +571,6 @@
     margin: 0;
     padding: 0;
     margin-right: 62px;
-    gap: 17px;
   }
 }
 .communication__line {
@@ -816,6 +823,7 @@
   text-align: center;
 }
 .hiring__top-title {
+  height: 45px;
   margin-bottom: 18px;
 }
 @media screen and (min-width: 1400px) {
@@ -825,7 +833,7 @@
   }
 }
 .hiring__top-description {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1400px) {
   .hiring__top-description {
@@ -892,6 +900,7 @@
   font-size: 22px;
   line-height: 28px;
   margin-bottom: 19px;
+  width: 150px;
 }
 @media screen and (min-width: 1400px) {
   .hiring__vacancy-button_name {
@@ -1069,13 +1078,15 @@
 }
 .footer__logo-icon {
   width: 60px;
+  object-fit: cover;
+  object-position: left;
+  transform: translate(2px, 5px) scale(1.1);
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1400px) {
   .footer__logo-icon {
     height: 60px;
-    object-fit: cover;
-    object-position: left;
+    transform: none;
     margin: 0;
   }
 }
