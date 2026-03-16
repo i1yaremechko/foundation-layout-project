@@ -689,7 +689,8 @@
   }
 }
 .audience__buttons-item {
-  width: 100%;
+  width: 290px;
+  height: 300px;
   padding: 22px 0 33px 0;
   border: none;
   background-color: rgb(255, 255, 255);
@@ -699,7 +700,7 @@
 }
 @media screen and (min-width: 1400px) {
   .audience__buttons-item {
-    max-width: 262px;
+    width: 262px;
     box-shadow: none;
   }
 }
@@ -951,11 +952,13 @@
 }
 .order__image-properties {
   width: 200px;
+  height: 220px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 1400px) {
   .order__image-properties {
     width: 270px;
+    height: 297px;
     margin-top: 72px;
   }
 }
@@ -1059,11 +1062,11 @@
 }
 .footer__logo-icon {
   width: 60px;
+  height: 60px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1400px) {
   .footer__logo-icon {
-    height: 60px;
     object-fit: cover;
     object-position: left;
     margin: 0;

@@ -22,10 +22,12 @@
 
   &__image-properties {
     width: 200px;
+    height: 220px;
     margin-bottom: 40px;
 
     @include for-desktop {
       width: 270px;
+      height: 297px;
       margin-top: 72px;
     }
   }
