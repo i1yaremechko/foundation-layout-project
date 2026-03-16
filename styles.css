@@ -43,6 +43,7 @@
 .header__logo-icon {
   width: 48px;
   height: 48px;
+  transform: translate(0, 5px) scale(1.2);
   margin: 8px 13px 8px 15px;
 }
 @media screen and (min-width: 1400px) {
@@ -50,7 +51,6 @@
     width: 60px;
     height: 60px;
     object-fit: cover;
-    object-position: left;
     margin: 0;
   }
 }
