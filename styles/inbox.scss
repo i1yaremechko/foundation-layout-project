@@ -29,12 +29,19 @@
     }
   }
 
+  &__info {
+    @include for-desktop {
+      padding-left: 30px;
+    }
+  }
+
   &__subtitle {
     color: rgba(241, 89, 43, 1);
     margin-bottom: 17px;
 
     @include for-desktop {
       margin-bottom: 24px;
+      height: 34px;
     }
   }
 
@@ -43,6 +50,7 @@
 
     @include for-desktop {
       margin-bottom: 30px;
+      height: 112px;
     }
   }
 
@@ -51,6 +59,8 @@
 
     @include for-desktop {
       margin-bottom: 45px;
+      height: 102px;
+      width: 461px;
     }
   }
 
@@ -61,12 +71,16 @@
     border-bottom: 4px solid rgba(1, 133, 208, 1);
 
     @include for-desktop {
-      padding: 30px 30px 24px 30px;
+      padding: 30px 30px 26px 30px;
+      width: 519px;
+      height: 213px;
     }
 
     &-message {
       font-size: 20px;
       line-height: 28px;
+      height: 85px;
+      width: 459px;
     }
 
     &-account {
