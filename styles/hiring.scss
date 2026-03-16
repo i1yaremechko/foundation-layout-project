@@ -14,12 +14,19 @@
       margin-bottom: 18px;
 
       @include for-desktop {
+        height: 62px;
         margin-bottom: 20px;
       }
     }
 
     &-description {
       margin-bottom: 28px;
+
+      @include for-desktop {
+        width: 556px;
+        height: 72px;
+        margin-left: 97px;
+      }
     }
 
     &-button {
@@ -47,6 +54,7 @@
 
     @include for-desktop {
       margin-top: 110px;
+      gap: 20px;
     }
 
     &-button {
@@ -59,6 +67,7 @@
       height: 140px;
 
       @include for-desktop {
+        width: 750px;
         height: 81px;
       }
 

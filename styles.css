@@ -203,6 +203,7 @@
     display: flex;
     gap: 28px;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
   .about__article {
     flex: 1;
@@ -224,7 +225,7 @@
 @media screen and (min-width: 1400px) {
   .customers {
     flex-wrap: nowrap;
-    padding: 30px 130px 106px 130px;
+    padding: 0 130px;
     justify-content: space-between;
     align-items: center;
   }
@@ -268,6 +269,7 @@
     width: 100%;
     position: relative;
     padding-left: 130px;
+    margin-top: 106px;
   }
 }
 .features__subtitle {
@@ -612,6 +614,7 @@
   .audience {
     height: 983px;
     padding: 0;
+    margin-bottom: 43px;
   }
 }
 .audience__info {
@@ -643,6 +646,7 @@
 }
 @media screen and (min-width: 1400px) {
   .audience__description {
+    height: 72px;
     margin-bottom: 34px;
   }
 }
@@ -717,6 +721,7 @@
 @media screen and (min-width: 1400px) {
   .feedback {
     padding: 0;
+    margin-top: 76px;
     height: 355px;
     position: relative;
     border-bottom: 1px solid rgb(227, 227, 227);
@@ -763,6 +768,11 @@
   justify-content: center;
   gap: 19.5px;
 }
+@media screen and (min-width: 1400px) {
+  .feedback__switch {
+    gap: 13px;
+  }
+}
 .feedback__switch-oval {
   width: 12px;
   height: 12px;
@@ -802,11 +812,19 @@
 }
 @media screen and (min-width: 1400px) {
   .hiring__top-title {
+    height: 62px;
     margin-bottom: 20px;
   }
 }
 .hiring__top-description {
   margin-bottom: 28px;
+}
+@media screen and (min-width: 1400px) {
+  .hiring__top-description {
+    width: 556px;
+    height: 72px;
+    margin-left: 97px;
+  }
 }
 .hiring__top-button {
   width: 100%;
@@ -832,6 +850,7 @@
 @media screen and (min-width: 1400px) {
   .hiring__vacancy {
     margin-top: 110px;
+    gap: 20px;
   }
 }
 .hiring__vacancy-button {
@@ -845,6 +864,7 @@
 }
 @media screen and (min-width: 1400px) {
   .hiring__vacancy-button {
+    width: 750px;
     height: 81px;
   }
 }
@@ -926,7 +946,7 @@
 }
 @media screen and (min-width: 1400px) {
   .order__button {
-    width: 160px;
+    min-width: 160px;
   }
 }
 .order__image-properties {
@@ -954,6 +974,7 @@
 }
 @media screen and (min-width: 1400px) {
   .order__content-title {
+    height: 48px;
     text-align: left;
     margin-bottom: 12px;
   }
@@ -989,6 +1010,13 @@
   line-height: 14px;
   text-align: center;
 }
+@media screen and (min-width: 1400px) {
+  .order__content-send_input {
+    line-height: 13px;
+    padding-left: 15px;
+    text-align: left;
+  }
+}
 .order__content-addition {
   font-size: 14px;
   line-height: 22px;
@@ -1009,7 +1037,6 @@
 @media screen and (min-width: 1400px) {
   .footer__top {
     display: flex;
-    gap: 126px;
     border-bottom: 1px solid rgb(227, 227, 227);
     padding-left: 130px;
   }
@@ -1022,11 +1049,12 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__logo {
-    padding-top: 43px;
+    padding: 43px 0 59px 0;
     text-align: left;
     width: 360px;
     line-height: 25px;
     border: none;
+    margin-right: 126px;
   }
 }
 .footer__logo-icon {
@@ -1035,6 +1063,9 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__logo-icon {
+    height: 60px;
+    object-fit: cover;
+    object-position: left;
     margin: 0;
   }
 }
@@ -1044,7 +1075,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 }
 .footer__logo-info {
@@ -1065,6 +1096,7 @@
   .footer__logo-description {
     font-size: 18px;
     line-height: 26px;
+    height: 85px;
   }
 }
 .footer__logo-downloads {
@@ -1077,7 +1109,7 @@
   .footer__logo-downloads {
     justify-content: left;
     gap: 10px;
-    margin-top: 31px;
+    margin-top: 25px;
   }
 }
 .footer__navigation {
@@ -1088,28 +1120,36 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__navigation {
+    width: 559px;
+    height: 231px;
     flex-direction: row;
     gap: 29px;
-    padding-top: 60px;
-  }
-}
-.footer__navigation-list {
-  list-style-type: none;
-}
-.footer__navigation-list_item {
-  font-size: 18px;
-  line-height: 36px;
-}
-@media screen and (min-width: 1400px) {
-  .footer__navigation-links {
-    margin-bottom: 47px;
-    width: 265px;
+    padding: 0;
   }
 }
 .footer__navigation-title {
   font-size: 22px;
   line-height: 28px;
   margin-bottom: 18px;
+}
+@media screen and (min-width: 1400px) {
+  .footer__navigation-title {
+    margin-top: 62px;
+  }
+}
+.footer__navigation-list {
+  list-style-type: none;
+  line-height: 30px;
+}
+.footer__navigation-list_item {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+@media screen and (min-width: 1400px) {
+  .footer__navigation-links {
+    width: 265px;
+    height: 185px;
+  }
 }
 .footer__bottom {
   padding: 0 0 23px 15px;

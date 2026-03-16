@@ -6,6 +6,7 @@
 
   @include for-desktop {
     padding: 0;
+    margin-top: 76px;
     height: 355px;
     position: relative;
     border-bottom: 1px solid rgba(227, 227, 227, 1);
@@ -51,6 +52,10 @@
     display: flex;
     justify-content: center;
     gap: 19.5px;
+
+    @include for-desktop {
+      gap: 13px;
+    }
 
     &-oval {
       width: 12px;
