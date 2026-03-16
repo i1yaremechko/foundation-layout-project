@@ -57,6 +57,8 @@
 
   &__hidden-image {
     @include for-desktop {
+      height: 168px;
+      width: 84px;
       position: absolute;
       top: 257px;
       left: 0;
@@ -153,7 +155,9 @@
 
   &__invision-screen {
     @include for-desktop {
-      height: 600px;
+      min-height: 600px;
+      width: 706px;
+      object-fit: cover;
       position: absolute;
       bottom: 0;
       right: 0;

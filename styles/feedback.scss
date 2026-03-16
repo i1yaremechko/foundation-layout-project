@@ -79,6 +79,10 @@
       position: absolute;
       bottom: 0;
       right: 26px;
+
+      & img {
+        width: 273px;
+      }
     }
   }
 }

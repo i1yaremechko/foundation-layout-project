@@ -316,6 +316,8 @@
 }
 @media screen and (min-width: 1400px) {
   .features__hidden-image {
+    height: 168px;
+    width: 84px;
     position: absolute;
     top: 257px;
     left: 0;
@@ -395,7 +397,9 @@
 }
 @media screen and (min-width: 1400px) {
   .features__invision-screen {
-    height: 600px;
+    min-height: 600px;
+    width: 706px;
+    object-fit: cover;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -794,6 +798,9 @@
     position: absolute;
     bottom: 0;
     right: 26px;
+  }
+  .feedback__image img {
+    width: 273px;
   }
 }
 
