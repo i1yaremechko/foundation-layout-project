@@ -1,197 +1,166 @@
 @import 'variables.scss';
 @import 'breakpoints';
-
 .header {
-  width: 100%;
-  background-color: rgba(243, 198, 189, 1);
-
-  @include for-desktop {
-    height: 710px;
-  }
-
-  &__button {
-    border: none;
-
-    @include for-desktop {
-      width: 160px;
-    }
-  }
-
-  &__top {
-    display: flex;
     width: 100%;
-    font-size: 18px;
-    line-height: 25px;
-    background-color: rgba(255, 255, 255, 1);
-    margin-bottom: 35px;
-
+    background-color: rgba(243, 198, 189, 1);
     @include for-desktop {
-      width: 1140px;
-      margin: 0 130px 76px 130px;
-      padding-top: 39px;
-      background-color: transparent;
+        height: 710px;
     }
-  }
-
-  &__logo {
-    display: flex;
-    align-items: center;
-
-    @include for-desktop {
-      gap: 15px;
+    &__button {
+        border: none;
+        @include for-desktop {
+            width: 160px;
+        }
     }
-
-    &-icon {
-      width: 48px;
-      height: 48px;
-      margin: 8px 13px 8px 15px;
-
-      @include for-desktop {
-        width: 60px;
-        height: 60px;
-        margin: 0;
-      }
-    }
-
-    &-title {
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    &-subtitle {
-      display: none;
-
-      @include for-desktop {
-        display: block;
-      }
-    }
-  }
-
-  &__navigation {
-    display: none;
-
-    @include for-desktop {
-      display: flex;
-      margin-left: auto;
-
-      &-content {
-        width: 292px;
-        margin-right: 56px;
-        padding-top: 7px;
-      }
-
-      &-list {
+    &__top {
         display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-      }
-
-      &-item {
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+        background-color: rgba(255, 255, 255, 1);
+        margin-bottom: 35px;
+        @include for-desktop {
+            width: 1140px;
+            margin: 0 130px 76px 130px;
+            padding-top: 39px;
+            background-color: transparent;
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        @include for-desktop {
+            gap: 15px;
+        }
+        &-icon {
+            width: 48px;
+            height: 48px;
+            margin: 8px 13px 8px 15px;
+            @include for-desktop {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                object-position: left;
+                margin: 0;
+            }
+        }
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        &-subtitle {
+            display: none;
+            @include for-desktop {
+                display: block;
+            }
+        }
+    }
+    &__navigation {
+        display: none;
+        @include for-desktop {
+            display: flex;
+            margin-left: auto;
+            &-content {
+                width: 292px;
+                margin-right: 56px;
+                padding-top: 7px;
+            }
+            &-list {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+            }
+            &-item {
+                cursor: pointer;
+                &--selected {
+                    font-weight: 700;
+                }
+                &--dropdown {
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+            &-arrow {
+                display: inline-block;
+                margin-left: 11px;
+            }
+        }
+    }
+    &__icon-navigation {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        padding: 0 20px;
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
         cursor: pointer;
-
-        &--selected {
-          font-weight: 700;
+        @include for-desktop {
+            display: none;
         }
-
-        &--dropdown {
-          display: inline-flex;
-          align-items: center;
-        }
-      }
-
-      &-arrow {
-        display: inline-block;
-        margin-left: 11px;
-      }
     }
-  }
-
-  &__icon-navigation {
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    padding: 0 20px;
-    border-left: 1px solid rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-
-    @include for-desktop {
-      display: none;
-    }
-  }
 }
 
 .headline {
-  @include for-desktop {
-    position: relative;
-    margin-left: 130px;
-    width: 1245px;
-    height: 456px;
-  }
-
-  &__content {
-    margin: 0 15px 33px;
-
     @include for-desktop {
-      margin: 0;
-      padding: 0;
+        position: relative;
+        margin-left: 130px;
+        width: 1245px;
+        height: 456px;
     }
-  }
-
-  &__title {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
-    letter-spacing: -0.3px;
-
-    @include for-desktop {
-      width: 754px;
-      font-size: 80px;
-      font-weight: 700;
-      line-height: 78px;
-      letter-spacing: -0.5px;
-      position: relative;
-      z-index: 1;
+    &__content {
+        margin: 0 15px 33px;
+        @include for-desktop {
+            margin: 0;
+            padding: 0;
+        }
     }
-  }
-
-  &__description {
-    margin-top: 28px;
-    font-size: 24px;
-    line-height: 34px;
-
-    @include for-desktop {
-      width: 456px;
-      margin-top: 34px;
+    &__title {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.3px;
+        @include for-desktop {
+            height: 165px;
+            width: 754px;
+            font-size: 80px;
+            line-height: 78px;
+            letter-spacing: -0.5px;
+            position: relative;
+            z-index: 1;
+        }
     }
-  }
-
-  &__action {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-    @include for-desktop {
-      margin-top: 58px;
-      flex-direction: row;
-      gap: 10px;
+    &__description {
+        margin-top: 28px;
+        font-size: 24px;
+        line-height: 34px;
+        @include for-desktop {
+            height: 102px;
+            width: 456px;
+            margin-top: 34px;
+        }
     }
-  }
-
-  &__image {
-    @include for-desktop {
-      position: absolute;
-      height: 448px;
-      bottom: 0;
-      right: 0;
+    &__action {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        @include for-desktop {
+            margin-top: 58px;
+            flex-direction: row;
+            gap: 10px;
+        }
     }
-
-    &-properties {
-      width: 100%;
-      height: auto;
-      margin-bottom: 36px;
+    &__image {
+        @include for-desktop {
+            position: absolute;
+            height: 448px;
+            bottom: 0;
+            right: 0;
+        }
+        &-properties {
+            width: 100%;
+            height: auto;
+            margin-bottom: 36px;
+        }
     }
-  }
 }
