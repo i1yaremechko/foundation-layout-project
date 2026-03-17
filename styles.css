@@ -51,6 +51,7 @@
     width: 60px;
     height: 60px;
     object-fit: cover;
+    filter: brightness(110%);
     margin: 0;
   }
 }
@@ -84,8 +85,9 @@
     justify-content: space-between;
     list-style-type: none;
   }
-  .header__navigation-item {
-    cursor: pointer;
+  .header__navigation-item a {
+    text-decoration: none;
+    color: rgb(43, 41, 45);
   }
   .header__navigation-item--selected {
     font-weight: 700;
@@ -690,6 +692,7 @@
 .audience__buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
 }
 @media screen and (min-width: 1400px) {
@@ -839,7 +842,7 @@
   .hiring__top-description {
     width: 556px;
     height: 72px;
-    margin-left: 97px;
+    margin: 0 0 27px 97px;
   }
 }
 .hiring__top-button {
@@ -1120,6 +1123,10 @@
     height: 85px;
   }
 }
+.footer__logo-button {
+  border: none;
+  cursor: pointer;
+}
 .footer__logo-downloads {
   height: 40px;
   display: flex;
@@ -1137,7 +1144,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 30px 15px 22px;
+  padding: 28px 15px 22px;
 }
 @media screen and (min-width: 1400px) {
   .footer__navigation {
@@ -1151,7 +1158,7 @@
 .footer__navigation-title {
   font-size: 22px;
   line-height: 28px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 1400px) {
   .footer__navigation-title {
@@ -1165,6 +1172,9 @@
 .footer__navigation-list_item {
   font-size: 18px;
   margin-bottom: 6px;
+}
+.footer__navigation-list_item a {
+  text-decoration: none;
 }
 @media screen and (min-width: 1400px) {
   .footer__navigation-links {

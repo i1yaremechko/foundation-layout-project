@@ -36,12 +36,16 @@
             </div>
           </div>
           <div class="header__navigation">
-            <nav class="header__navigation-content">
+            <nav class="header__navigation-content" aria-label="Main Navigation">
               <ul class="header__navigation-list">
-                <li class="header__navigation-item header__navigation-item--selected">Home</li>
-                <li class="header__navigation-item">Stories</li>
+                <li class="header__navigation-item header__navigation-item--selected">
+                  <a href="#" aria-current="page">Home</a>
+                </li>
+                <li class="header__navigation-item">
+                  <a href="#">Stories</a>
+                </li>
                 <li class="header__navigation-item header__navigation-item--dropdown">
-                  Library
+                  <a href="#">Library</a>
                   <span class="header__navigation-arrow">
                     <img
                       src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png"
@@ -588,37 +592,59 @@
               </p>
             </div>
             <div class="footer__logo-downloads">
-              <img
-                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
-                alt="app-store logo"
-              />
-              <img
-                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png"
-                alt="google-play logo"
-              />
+              <button class="footer__logo-button">
+                <img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
+                  alt="app-store logo"
+                />
+              </button>
+              <button class="footer__logo-button">
+                <img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png"
+                  alt="google-play logo"
+                />
+              </button>
             </div>
           </div>
-          <div class="footer__navigation">
+          <nav class="footer__navigation">
             <div class="footer__navigation-links">
               <h4 class="footer__navigation-title">Product</h4>
-              <ul class="footer__navigation-list additional-description">
-                <li class="footer__navigation-list_item">Acquire Users</li>
-                <li class="footer__navigation-list_item">Content Marketing</li>
-                <li class="footer__navigation-list_item">Website Templates</li>
-                <li class="footer__navigation-list_item">Customer Management</li>
-                <li class="footer__navigation-list_item">Virtual Inbox</li>
+              <ul class="footer__navigation-list">
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Acquire Users</a>
+                </li>
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Content Marketing</a>
+                </li>
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Website Templates</a>
+                </li>
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Customer Management</a>
+                </li>
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Virtual Inbox</a>
+                </li>
               </ul>
             </div>
             <div class="footer__navigation-links">
               <h4 class="footer__navigation-title">Company</h4>
-              <ul class="footer__navigation-list additional-description">
-                <li class="footer__navigation-list_item">About Foundation</li>
-                <li class="footer__navigation-list_item">Brand Guidelines</li>
-                <li class="footer__navigation-list_item">Press Kit</li>
-                <li class="footer__navigation-list_item">Support</li>
+              <ul class="footer__navigation-list">
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">About Foundation</a>
+                </li>
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Brand Guidelines</a>
+                </li>
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Press Kit</a>
+                </li>
+                <li class="footer__navigation-list_item">
+                  <a class="additional-description" href="#">Support</a>
+                </li>
               </ul>
             </div>
-          </div>
+          </nav>
         </div>
         <div class="footer__bottom">
           <nav class="footer__links">

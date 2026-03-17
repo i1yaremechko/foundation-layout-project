@@ -51,7 +51,7 @@
         width: 60px;
         height: 60px;
         object-fit: cover;
-
+        filter: brightness(110%);
         margin: 0;
       }
     }
@@ -90,7 +90,11 @@
       }
 
       &-item {
-        cursor: pointer;
+
+        & a {
+          text-decoration: none;
+          color: rgba(43, 41, 45, 1);
+        }
 
         &--selected {
           font-weight: 700;
