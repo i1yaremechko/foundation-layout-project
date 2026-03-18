@@ -2,24 +2,25 @@
 
 .inbox {
   width: 100%;
-  background-color: rgba(252, 240, 227, 0.4);
   padding: 50px 15px 48px;
 
+  background-color: rgba(252, 240, 227, 0.4);
+
   @include for-desktop {
+    display: flex;
     margin-top: 105px;
     padding: 0;
     height: 790px;
-    display: flex;
   }
 
   &__image {
     margin-bottom: 32px;
 
     @include for-desktop {
+      gap: 17px;
       min-width: 425px;
       padding-top: 140px;
       margin: 0 165px 0 190px;
-      gap: 17px;
     }
   }
 
@@ -36,8 +37,9 @@
   }
 
   &__subtitle {
-    color: rgba(241, 89, 43, 1);
     margin-bottom: 17px;
+
+    color: rgba(241, 89, 43, 1);
 
     @include for-desktop {
       margin-bottom: 24px;
@@ -65,40 +67,40 @@
   }
 
   &__response {
+    padding: 30px 20px;
+
+    border-bottom: 4px solid rgba(1, 133, 208, 1);
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-    padding: 30px 20px;
-    border-bottom: 4px solid rgba(1, 133, 208, 1);
 
     @include for-desktop {
       padding: 30px 30px 26px 30px;
       width: 519px;
       height: 213px;
     }
+  }
 
-    &-message {
-      font-size: 20px;
-      line-height: 28px;
+  &__response-message {
+    font-size: 20px;
+    line-height: 28px;
 
-      @include for-desktop {
-        height: 85px;
-        width: 459px;
-      }
-
+    @include for-desktop {
+      height: 85px;
+      width: 459px;
     }
+  }
 
-    &-account {
-      margin-top: 26px;
-      display: flex;
-      gap: 11px;
+  &__response-account {
+    display: flex;
+    gap: 11px;
+    margin-top: 26px;
+  }
 
-      &_avatar {
-        padding-top: 2px;
-      }
+  &__response-account-avatar {
+    padding-top: 2px;
+  }
 
-      &_info {
-        line-height: 22px;
-      }
-    }
+  &__response-account-info {
+    line-height: 22px;
   }
 }

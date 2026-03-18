@@ -11,90 +11,99 @@
   &__top {
     @include for-desktop {
       display: flex;
-      border-bottom: 1px solid rgba(227, 227, 227, 1);
       padding-left: 130px;
+
+      border-bottom: 1px solid rgba(227, 227, 227, 1);
     }
   }
 
   &__logo {
     padding-bottom: 40px;
-    text-align: center;
-    line-height: 25px;
+
     border-bottom: 1px solid rgba(227, 227, 227, 1);
 
+    text-align: center;
+    line-height: 25px;
+
     @include for-desktop {
-      padding: 43px 0 59px 0;
-      text-align: left;
       width: 360px;
-      line-height: 25px;
-      border: none;
       margin-right: 126px;
-    }
+      padding: 43px 0 59px 0;
 
-    &-icon {
-      width: 60px;
-      object-fit: cover;
-      object-position: left;
-      transform: translate(2px, 5px) scale(1.1);
-      margin-bottom: 20px;
-
-      @include for-desktop {
-        height: 60px;
-        transform: none;
-        margin: 0;
-      }
-    }
-
-    &-content {
-      @include for-desktop {
-        height: 60px;
-        display: flex;
-        gap: 15px;
-        align-items: center;
-        margin-bottom: 26px;
-      }
-    }
-
-    &-info {
-      margin-bottom: 32px;
-
-      @include for-desktop {
-        margin: 0;
-      }
-    }
-
-    &-title {
-      font-size: 20px;
-    }
-
-    &-subtitle {
-      font-size: 18px;
-    }
-
-    &-description {
-      @include for-desktop {
-        font-size: 18px;
-        line-height: 26px;
-        height: 85px;
-      }
-    }
-
-    &-button {
       border: none;
-      cursor: pointer;
+
+      text-align: left;
+      line-height: 25px;
     }
+  }
 
-    &-downloads {
-      height: 40px;
+  &__logo-icon {
+    width: 60px;
+    margin-bottom: 20px;
+
+    object-fit: cover;
+    object-position: left;
+    transform: translate(2px, 5px) scale(1.1);
+
+    @include for-desktop {
+      height: 60px;
+      margin: 0;
+
+      transform: none;
+    }
+  }
+
+  &__logo-content {
+    @include for-desktop {
       display: flex;
-      gap: 9px;
-      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 26px;
+      height: 60px;
+    }
+  }
 
-      @include for-desktop {
-        justify-content: left;
-        gap: 10px;
-        margin-top: 25px;
-      }
+  &__logo-info {
+    margin-bottom: 32px;
+
+    @include for-desktop {
+      margin: 0;
+    }
+  }
+
+  &__logo-title {
+    font-size: 20px;
+  }
+
+  &__logo-subtitle {
+    font-size: 18px;
+  }
+
+  &__logo-description {
+    @include for-desktop {
+      height: 85px;
+
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__logo-button {
+    border: none;
+
+    cursor: pointer;
+  }
+
+  &__logo-downloads {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    height: 40px;
+
+    @include for-desktop {
+      justify-content: left;
+      gap: 10px;
+      margin-top: 25px;
     }
   }
 
@@ -105,44 +114,45 @@
     padding: 28px 15px 22px;
 
     @include for-desktop {
-      width: 559px;
-      height: 231px;
+      display: flex;
       flex-direction: row;
       gap: 29px;
+      width: 559px;
+      height: 231px;
       padding: 0;
     }
+  }
 
-    &-title {
-      font-size: 22px;
-      line-height: 28px;
-      margin-bottom: 16px;
+  &__navigation-title {
+    margin-bottom: 16px;
 
-      @include for-desktop {
-        margin-top: 62px;
-      }
+    font-size: 22px;
+    line-height: 28px;
+
+    @include for-desktop {
+      margin-top: 62px;
     }
+  }
 
-    &-list {
-      list-style-type: none;
-      line-height: 30px;
+  &__navigation-list {
+    list-style-type: none;
+    line-height: 30px;
+  }
 
-      &_item {
-        font-size: 18px;
-        margin-bottom: 6px;
+  &__navigation-list-item {
+    margin-bottom: 6px;
 
-        & a {
-          text-decoration: none;
-        }
-      }
+    font-size: 18px;
+  }
 
+  &__navigation-list-item a {
+    text-decoration: none;
+  }
 
-    }
-
-    &-links {
-      @include for-desktop {
-        width: 265px;
-        height: 185px;
-      }
+  &__navigation-links {
+    @include for-desktop {
+      width: 265px;
+      height: 185px;
     }
   }
 
@@ -158,15 +168,15 @@
 
   &__links {
     display: flex;
-    width: 180px;
     justify-content: space-between;
+    width: 180px;
     margin-bottom: 30px;
+  }
 
-    &-items {
-      text-decoration: none;
-      font-size: 14px;
-      line-height: 22px;
-    }
+  &__links-items {
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: none;
   }
 
   &__social-links {

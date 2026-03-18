@@ -4,15 +4,17 @@
   width: 100%;
 
   @include for-desktop {
-    height: 600px;
-    width: 100%;
     position: relative;
-    padding-left: 130px;
+
     margin-top: 106px;
+    padding-left: 130px;
+    width: 100%;
+    height: 600px;
   }
 
   &__subtitle {
     margin-bottom: 16px;
+
     color: rgba(0, 155, 77, 1);
 
     @include for-desktop {
@@ -37,51 +39,54 @@
 
   &__customers {
     padding: 48px 15px 40px;
+
     border-bottom: 1px solid rgba(227, 227, 227, 1);
 
     @include for-desktop {
       padding: 0;
     }
+  }
 
-    &-title {
-      margin-bottom: 20px;
+  &__customers-title {
+    margin-bottom: 20px;
 
-      @include for-desktop {
-        height: 112px;
-        margin-bottom: 31px;
-      }
+    @include for-desktop {
+      height: 112px;
+      margin-bottom: 31px;
     }
+  }
 
-    &-image {
-      gap: 19px;
-    }
+  &__customers-image {
+    gap: 19px;
   }
 
   &__hidden-image {
     @include for-desktop {
-      height: 168px;
-      width: 84px;
       position: absolute;
       top: 257px;
       left: 0;
+
+      width: 84px;
+      height: 168px;
     }
   }
 
   &__engage {
     padding: 40px 15px;
+
     border-bottom: 1px solid rgba(227, 227, 227, 1);
 
     @include for-desktop {
       padding: 0;
     }
+  }
 
-    &-title {
-      margin-bottom: 24px;
-    }
+  &__engage-title {
+    margin-bottom: 24px;
+  }
 
-    &-image {
-      gap: 20px;
-    }
+  &__engage-image {
+    gap: 20px;
   }
 
   &__support {
@@ -89,39 +94,54 @@
 
     @include for-desktop {
       padding: 0;
+
       border-bottom: 1px solid rgba(227, 227, 227, 1);
-    }
-
-    &-title {
-      margin-bottom: 18px;
-    }
-
-    &-image {
-      gap: 20px;
     }
   }
 
-  &__selector {
+  &__support-title {
+    margin-bottom: 18px;
+  }
+
+  &__support-image {
+    gap: 20px;
+  }
+
+  &__invision-screen {
     @include for-desktop {
-      &-customers {
-        padding-bottom: 20px;
-        height: 106px;
-      }
+      position: absolute;
+      right: 0;
+      bottom: 0;
 
-      &-engage {
-        height: 50px;
-        margin-top: 20px;
-      }
+      width: 706px;
+      min-height: 600px;
 
-      &-support {
-        height: 50px;
-        margin-top: 20px;
-        padding: 2px;
-      }
+      object-fit: cover;
+    }
+  }
 
+  @include for-desktop {
+    &__selector-customers {
+      height: 106px;
+      padding-bottom: 20px;
+    }
+
+    &__selector-engage {
+      height: 50px;
+      margin-top: 20px;
+    }
+
+    &__selector-support {
+      height: 50px;
+      margin-top: 20px;
+      padding: 2px;
+    }
+
+    &__selector {
       &:hover {
-        cursor: pointer;
         border-bottom: 3px solid rgba(49, 66, 198, 1);
+
+        cursor: pointer;
 
         & .features__selector-item {
           color: rgba(49, 66, 198, 1);
@@ -131,38 +151,28 @@
           filter: brightness(1);
         }
       }
-
-      &-icon {
-        filter: brightness(0);
-      }
-
-      &-item {
-        display: flex;
-        gap: 15px;
-        align-items: center;
-      }
-
-      &-title {
-        font-size: 22px;
-        line-height: 26px;
-      }
-
-      &-description {
-        margin-top: 10px;
-        font-size: 18px;
-        line-height: 26px;
-      }
     }
-  }
 
-  &__invision-screen {
-    @include for-desktop {
-      min-height: 600px;
-      width: 706px;
-      object-fit: cover;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+    &__selector-icon {
+      filter: brightness(0);
+    }
+
+    &__selector-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &__selector-title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &__selector-description {
+      margin-top: 10px;
+
+      font-size: 18px;
+      line-height: 26px;
     }
   }
 }

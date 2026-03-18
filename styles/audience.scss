@@ -1,13 +1,14 @@
 @import 'breakpoints';
 
 .audience {
-  background-color: rgba(0, 161, 198, 0.07);
   padding: 50px 15px;
+
+  background-color: rgba(0, 161, 198, 0.07);
 
   @include for-desktop {
     height: 983px;
-    padding: 0;
     margin-bottom: 43px;
+    padding: 0;
   }
 
   &__info {
@@ -47,13 +48,15 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
     margin-bottom: 40px;
 
     @include for-desktop {
-      margin: 0;
       flex-direction: row;
       justify-content: center;
       gap: 10px;
+
+      margin: 0;
     }
   }
 
@@ -63,11 +66,12 @@
     @include for-desktop {
       width: 160px;
     }
+  }
 
-    &-style {
-      background-color: rgba(255, 255, 255, 1);
-      color: rgba(43, 41, 45, 1);
-    }
+  &__button-style {
+    background-color: rgba(255, 255, 255, 1);
+
+    color: rgba(43, 41, 45, 1);
   }
 
   &__buttons {
@@ -77,37 +81,44 @@
     gap: 15px;
 
     @include for-desktop {
-      margin: 0 130px 110px;
       flex-direction: row;
       justify-content: space-between;
+
+      margin: 0 130px 110px;
+    }
+  }
+
+  &__buttons-item {
+    width: 290px;
+    height: 300px;
+    padding: 22px 0 33px 0;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;
+
+    cursor: pointer;
+
+    @include for-desktop {
+      width: 262px;
+
+      box-shadow: none;
     }
 
-    &-item {
-      width: 290px;
-      height: 300px;
-      padding: 22px 0 33px 0;
-      border: none;
-      background-color: rgba(255, 255, 255, 1);
-      box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-      cursor: pointer;
-      border-radius: 8px;
+    &:hover {
+      background-color: rgba(49, 65, 197, 1);
+      box-shadow: 0px 11px 55px 0px rgba(0, 0, 0, 0.07), 0px 29px 45px 0px rgba(0, 0, 0, 0.08), 0px 13px 18px 0px rgba(0, 0, 0, 0.15);
 
-      @include for-desktop {
-        width: 262px;
-        box-shadow: none;
-      }
-
-      &:hover {
-        background-color: rgba(49, 65, 197, 1);
-        color: white;
-        box-shadow: 0px 11px 55px 0px rgba(0, 0, 0, 0.07), 0px 29px 45px 0px rgba(0, 0, 0, 0.08), 0px 13px 18px 0px rgba(0, 0, 0, 0.15);
-      }
+      color: white;
     }
+  }
 
-    &-description {
-      font-size: 22px;
-      line-height: 28px;
-      margin-top: 22px;
-    }
+  &__buttons-description {
+    margin-top: 22px;
+
+    font-size: 22px;
+    line-height: 28px;
   }
 }

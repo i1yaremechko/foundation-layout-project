@@ -9,34 +9,35 @@
 
   &__top {
     text-align: center;
+  }
 
-    &-title {
-      height: 45px;
-      margin-bottom: 18px;
+  &__top-title {
+    height: 45px;
+    margin-bottom: 18px;
 
-      @include for-desktop {
-        height: 62px;
-        margin-bottom: 20px;
-      }
+    @include for-desktop {
+      height: 62px;
+      margin-bottom: 20px;
     }
+  }
 
-    &-description {
-      margin-bottom: 30px;
+  &__top-description {
+    margin-bottom: 30px;
 
-      @include for-desktop {
-        width: 556px;
-        height: 72px;
-        margin: 0 0 27px 97px;
-      }
+    @include for-desktop {
+      width: 556px;
+      height: 72px;
+      margin: 0 0 27px 97px;
     }
+  }
 
-    &-button {
-      width: 100%;
-      border: none;
+  &__top-button {
+    width: 100%;
 
-      @include for-desktop {
-        width: 250px;
-      }
+    border: none;
+
+    @include for-desktop {
+      width: 250px;
     }
   }
 
@@ -48,94 +49,100 @@
   }
 
   &__vacancy {
-    margin-top: 39px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 39px;
 
     @include for-desktop {
       margin-top: 110px;
       gap: 20px;
     }
+  }
 
-    &-button {
-      background-color: transparent;
-      border: 1px solid rgba(43, 41, 45, 0.2);
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      height: 140px;
+  &__vacancy-button {
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
 
-      @include for-desktop {
-        width: 750px;
-        height: 81px;
-      }
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
 
-      &_info {
-        margin: 20px;
-        text-align: left;
+    cursor: pointer;
 
-        @include for-desktop {
-          margin: 0;
-          display: flex;
-          align-items: center;
-          gap: 20px;
-        }
-      }
+    @include for-desktop {
+      width: 750px;
+      height: 81px;
+    }
 
-      &_name {
-        font-size: 22px;
-        line-height: 28px;
-        margin-bottom: 19px;
-        width: 150px;
+    &:hover {
+      background-color: rgba(49, 65, 197, 1);
+      box-shadow: 0px 11px 55px 0px rgba(0, 0, 0, 0.07), 0px 13px 18px 0px rgba(0, 0, 0, 0.15);
 
-        @include for-desktop {
-          width: 408px;
-          margin: 0;
-          margin-left: 25px;
-        }
-      }
+      color: rgba(255, 255, 255, 1);
 
-      &_location {
-        line-height: 22px;
-        opacity: 0.6;
-
-        @include for-desktop {
-          font-size: 18px;
-          width: 232px;
-        }
-      }
-
-      &_dissabled {
-        background-color: rgba(213, 212, 213, 1);
-
-        @include for-desktop {
-          background-color: transparent;
-        }
-      }
-
-      &_active {
+      & .hiring__vacancy--dissabled {
         display: none;
       }
 
-      &:hover {
-        background-color: rgba(49, 65, 197, 1);
-        box-shadow: 0px 11px 55px 0px rgba(0, 0, 0, 0.07), 0px 13px 18px 0px rgba(0, 0, 0, 0.15);
-        color: rgba(255, 255, 255, 1);
+      & .hiring__vacancy--active {
+        display: flex;
+      }
 
-        & .hiring__vacancy-button_dissabled {
-          display: none;
-        }
-
-        & .hiring__vacancy-button_location {
-          opacity: 1;
-        }
-
-        & .hiring__vacancy-button_active {
-          display: flex;
-        }
+      & .hiring__vacancy-location {
+        opacity: 1;
       }
     }
+  }
+
+  &__vacancy-info {
+    margin: 20px;
+
+    text-align: left;
+
+    @include for-desktop {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 0;
+    }
+  }
+
+  &__vacancy-name {
+    margin-bottom: 19px;
+    width: 150px;
+
+    font-size: 22px;
+    line-height: 28px;
+
+    @include for-desktop {
+      width: 408px;
+      margin: 0;
+      margin-left: 25px;
+    }
+  }
+
+  &__vacancy-location {
+    line-height: 22px;
+    opacity: 0.6;
+
+    @include for-desktop {
+      width: 232px;
+
+      font-size: 18px;
+    }
+  }
+
+  &__vacancy--dissabled {
+    background-color: rgba(213, 212, 213, 1);
+
+    @include for-desktop {
+      background-color: transparent;
+    }
+  }
+
+  &__vacancy--active {
+    display: none;
   }
 }

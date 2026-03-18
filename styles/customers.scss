@@ -7,27 +7,29 @@
 
   @include for-desktop {
     flex-wrap: nowrap;
-    padding: 0 130px;
     justify-content: space-between;
     align-items: center;
+    padding: 0 130px;
   }
 
   &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 33%;
     height: 94px;
     width: auto;
     padding: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     border-bottom: 1px solid rgba(227, 227, 227, 1);
     border-right: 1px solid rgba(227, 227, 227, 1);
 
     @include for-desktop {
       flex: 0 0 auto;
-      padding: 0;
-      border: none;
       height: auto;
+      padding: 0;
+
+      border: none;
     }
 
     &:last-child {
@@ -37,11 +39,12 @@
     &:nth-child(3) {
       border-right: none;
     }
+  }
 
-    &-logo {
-      filter: brightness(0);
-      max-width: 100%;
-      height: auto;
-    }
+  &__item-logo {
+    max-width: 100%;
+    height: auto;
+
+    filter: brightness(0);
   }
 }
