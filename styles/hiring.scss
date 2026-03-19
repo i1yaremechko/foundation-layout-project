@@ -33,7 +33,6 @@
 
   &__top-button {
     width: 100%;
-
     border: none;
 
     @include for-desktop {
@@ -64,11 +63,9 @@
     display: flex;
     justify-content: space-between;
     height: 140px;
-
     background-color: transparent;
     border-radius: 8px;
     border: 1px solid rgba(43, 41, 45, 0.2);
-
     cursor: pointer;
 
     @include for-desktop {
@@ -79,7 +76,6 @@
     &:hover {
       background-color: rgba(49, 65, 197, 1);
       box-shadow: 0px 11px 55px 0px rgba(0, 0, 0, 0.07), 0px 13px 18px 0px rgba(0, 0, 0, 0.15);
-
       color: rgba(255, 255, 255, 1);
 
       & .hiring__vacancy--dissabled {
@@ -98,7 +94,6 @@
 
   &__vacancy-info {
     margin: 20px;
-
     text-align: left;
 
     @include for-desktop {
@@ -112,7 +107,6 @@
   &__vacancy-name {
     margin-bottom: 19px;
     width: 150px;
-
     font-size: 22px;
     line-height: 28px;
 
@@ -129,7 +123,6 @@
 
     @include for-desktop {
       width: 232px;
-
       font-size: 18px;
     }
   }

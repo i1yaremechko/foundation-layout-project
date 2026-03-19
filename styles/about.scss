@@ -4,10 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-
   width: 100%;
   padding: 46px 15px;
-
   background-color: rgba(244, 245, 247, 1);
 
   @include for-desktop {
@@ -15,7 +13,6 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 28px;
-
     height: 255px;
     margin-bottom: 30px;
     padding: 77px 130px 76px 130px;

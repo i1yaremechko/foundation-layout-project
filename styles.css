@@ -1,13 +1,14 @@
-.header {
+.top-section {
   width: 100%;
   background-color: rgb(243, 198, 189);
 }
 @media screen and (min-width: 1400px) {
-  .header {
+  .top-section {
     height: 710px;
   }
 }
-.header__top {
+
+.header {
   display: flex;
   width: 100%;
   margin-bottom: 35px;
@@ -16,7 +17,7 @@
   line-height: 25px;
 }
 @media screen and (min-width: 1400px) {
-  .header__top {
+  .header {
     width: 1140px;
     margin: 0 130px 76px 130px;
     padding-top: 39px;
@@ -51,11 +52,11 @@
   font-size: 20px;
   font-weight: 700;
 }
-.header__logo-subtitle {
+.header__logo-description {
   display: none;
 }
 @media screen and (min-width: 1400px) {
-  .header__logo-subtitle {
+  .header__logo-description {
     display: block;
   }
 }

@@ -3,7 +3,6 @@
 .inbox {
   width: 100%;
   padding: 50px 15px 48px;
-
   background-color: rgba(252, 240, 227, 0.4);
 
   @include for-desktop {
@@ -38,7 +37,6 @@
 
   &__subtitle {
     margin-bottom: 17px;
-
     color: rgba(241, 89, 43, 1);
 
     @include for-desktop {
@@ -68,7 +66,6 @@
 
   &__response {
     padding: 30px 20px;
-
     border-bottom: 4px solid rgba(1, 133, 208, 1);
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.1) inset;

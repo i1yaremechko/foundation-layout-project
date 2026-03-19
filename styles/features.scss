@@ -65,7 +65,6 @@
       position: absolute;
       top: 257px;
       left: 0;
-
       width: 84px;
       height: 168px;
     }
@@ -73,7 +72,6 @@
 
   &__engage {
     padding: 40px 15px;
-
     border-bottom: 1px solid rgba(227, 227, 227, 1);
 
     @include for-desktop {
@@ -94,7 +92,6 @@
 
     @include for-desktop {
       padding: 0;
-
       border-bottom: 1px solid rgba(227, 227, 227, 1);
     }
   }
@@ -112,10 +109,8 @@
       position: absolute;
       right: 0;
       bottom: 0;
-
       width: 706px;
       min-height: 600px;
-
       object-fit: cover;
     }
   }
@@ -140,7 +135,6 @@
     &__selector {
       &:hover {
         border-bottom: 3px solid rgba(49, 66, 198, 1);
-
         cursor: pointer;
 
         & .features__selector-item {
@@ -170,7 +164,6 @@
 
     &__selector-description {
       margin-top: 10px;
-
       font-size: 18px;
       line-height: 26px;
     }

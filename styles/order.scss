@@ -2,7 +2,6 @@
 
 .order {
   padding: 50px 15px;
-
   background-color: rgba(244, 245, 247, 1);
 
   @include for-desktop {
@@ -42,7 +41,6 @@
 
   &__content-title {
     margin-bottom: 18px;
-
     font-size: 40px;
     line-height: 40px;
     text-align: center;
@@ -51,14 +49,12 @@
     @include for-desktop {
       height: 48px;
       margin-bottom: 12px;
-
       text-align: left;
     }
   }
 
   &__content-description {
     margin-bottom: 79px;
-
     font-size: 22px;
     line-height: 32px;
 
@@ -82,17 +78,14 @@
   &__content-send-input {
     height: 48px;
     width: 100%;
-
     border-radius: 2px;
     border: 1px solid rgba(43, 41, 45, 0.2);
-
     font-size: 18px;
     line-height: 14px;
     text-align: center;
 
     @include for-desktop {
       padding-left: 15px;
-
       line-height: 13px;
       text-align: left;
     }
