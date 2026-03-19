@@ -5,6 +5,7 @@
 @media screen and (min-width: 1400px) {
   .top-section {
     height: 710px;
+    padding-top: 39px;
   }
 }
 
@@ -20,7 +21,6 @@
   .header {
     width: 1140px;
     margin: 0 130px 76px 130px;
-    padding-top: 39px;
     background-color: transparent;
   }
 }
